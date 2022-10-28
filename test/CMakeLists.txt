@@ -48,8 +48,6 @@ endif()
 find_package(doctest REQUIRED)
 find_package(Threads)
 
-include_directories(${GTEST_INCLUDE_DIRS})
-
 set(XTENSOR_SIGNAL_TESTS
     main.cpp
     test_config.cpp

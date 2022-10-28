@@ -16,10 +16,10 @@ set(XTENSOR_SIGNAL_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/include)
 # ==========
 
 set(XTENSOR_SIGNAL_CONFIG_FILE
-    "${XTENSOR_SIGNAL_INCLUDE_DIR}/xtensor-signal/xtensor_python_config.hpp")
-file(STRINGS ${XTENSOR_SIGNAL_CONFIG_FILE} xtensor_python_version_defines
+    "${XTENSOR_SIGNAL_INCLUDE_DIR}/xtensor-signal/xtensor_signal.hpp")
+file(STRINGS ${XTENSOR_SIGNAL_CONFIG_FILE} xtensor_signal_version_defines
     REGEX "#define XTENSOR_SIGNAL_VERSION_(MAJOR|MINOR|PATCH)")
-foreach(ver ${xtensor_python_version_defines})
+foreach(ver ${xtensor_signal_version_defines})
     if(ver MATCHES "#define XTENSOR_SIGNAL_VERSION_(MAJOR|MINOR|PATCH) +([^ ]+)$")
         set(XTENSOR_SIGNAL_VERSION_${CMAKE_MATCH_1} "${CMAKE_MATCH_2}" CACHE INTERNAL "")
     endif()

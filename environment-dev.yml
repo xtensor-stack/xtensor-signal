@@ -1,0 +1,11 @@
+name: xtensor-signal
+channels:
+  - conda-forge
+dependencies:
+  # Build dependencies
+  - cmake
+  # Host dependencies
+  - xsimd
+  - xtensor=0.24.0
+  - doctest
+

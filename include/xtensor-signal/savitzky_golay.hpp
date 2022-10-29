@@ -165,4 +165,6 @@ xt::xarray<double> savgol_filter(xt::xarray<double> x, size_t window_length, siz
     {
         (*iter_out++) = filter.Transform(*iter);
     }
+
+    return out;
 }

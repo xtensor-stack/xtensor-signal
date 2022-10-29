@@ -24,9 +24,9 @@ namespace xtensor_signal
                 1.795197067887975562e-01
             };
 
-            auto res = savgol_filter(data, 3, 5);
+           auto res = savgol_filter(data, 3, 5);
 
-            std::cout << res;
+           std::cout << res;
         }
     }
 }

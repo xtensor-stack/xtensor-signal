@@ -55,7 +55,7 @@ add_library(xtensor-signal INTERFACE IMPORTED)
 
 set_target_properties(xtensor-signal PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "/home/drew-hubley/xtensor-signal/include"
-  INTERFACE_LINK_LIBRARIES "xtensor;xsimd;openblas"
+  INTERFACE_LINK_LIBRARIES "xtensor;xsimd;xtensor-blas"
 )
 
 # This file does not depend on other imported targets which have

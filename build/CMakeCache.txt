@@ -292,17 +292,8 @@ TBB_DIR:PATH=TBB_DIR-NOTFOUND
 //install path for xtensor-signalConfig.cmake
 XTENSOR_SIGNAL_CMAKECONFIG_INSTALL_DIR:STRING=lib/cmake/xtensor-signal
 
-//The directory containing a CMake configuration file for cblas.
-cblas_DIR:PATH=cblas_DIR-NOTFOUND
-
-//The directory containing a CMake configuration file for clib.
-clib_DIR:PATH=clib_DIR-NOTFOUND
-
 //The directory containing a CMake configuration file for doctest.
 doctest_DIR:PATH=/home/drew-hubley/anaconda3/envs/xtensor-signal/lib/cmake/doctest
-
-//The directory containing a CMake configuration file for openblas.
-openblas_DIR:PATH=openblas_DIR-NOTFOUND
 
 //The directory containing a CMake configuration file for xsimd.
 xsimd_DIR:PATH=/home/drew-hubley/anaconda3/envs/xtensor-signal/lib/cmake/xsimd

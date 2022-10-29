@@ -76,7 +76,7 @@ target_include_directories(xtensor-signal INTERFACE
     $<BUILD_INTERFACE:${XTENSOR_SIGNAL_INCLUDE_DIR}>
     $<INSTALL_INTERFACE:include>)
 
-target_link_libraries(xtensor-signal INTERFACE xtensor xsimd openblas)
+target_link_libraries(xtensor-signal INTERFACE xtensor xsimd xtensor-blas)
 
 OPTION(BUILD_TESTS "xtensor test suite" OFF)
 

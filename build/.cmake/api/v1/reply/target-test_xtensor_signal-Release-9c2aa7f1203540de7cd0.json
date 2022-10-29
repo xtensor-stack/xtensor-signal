@@ -11,11 +11,13 @@
 		"commands" : 
 		[
 			"add_executable",
-			"target_link_libraries"
+			"target_link_libraries",
+			"find_package"
 		],
 		"files" : 
 		[
 			"test/CMakeLists.txt",
+			"/home/drew-hubley/anaconda3/envs/xtensor-signal/lib/cmake/xtensor-blas/xtensor-blasConfig.cmake",
 			"CMakeLists.txt"
 		],
 		"nodes" : 
@@ -36,13 +38,23 @@
 				"parent" : 0
 			},
 			{
-				"file" : 1
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 63,
+				"parent" : 3
+			},
+			{
+				"file" : 1,
+				"parent" : 4
 			},
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 79,
-				"parent" : 3
+				"line" : 49,
+				"parent" : 5
 			}
 		]
 	},
@@ -52,7 +64,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : " -march=native -Wunused-parameter -Wextra -Wreorder -Wconversion -fvisibility=hidden --verbose -std=c++14 -O3 -DNDEBUG"
+					"fragment" : " -march=native -Wunused-parameter -Wextra -Wreorder -Wconversion -fvisibility=hidden -std=c++14 -O3 -DNDEBUG"
 				}
 			],
 			"includes" : 
@@ -82,7 +94,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-march=native -Wunused-parameter -Wextra -Wreorder -Wconversion -fvisibility=hidden --verbose -std=c++14 -O3 -DNDEBUG",
+				"fragment" : "-march=native -Wunused-parameter -Wextra -Wreorder -Wconversion -fvisibility=hidden -std=c++14 -O3 -DNDEBUG",
 				"role" : "flags"
 			},
 			{
@@ -90,13 +102,32 @@
 				"role" : "flags"
 			},
 			{
+				"fragment" : "-Wl,-rpath,/home/drew-hubley/anaconda3/envs/xtensor-signal/lib",
+				"role" : "libraries"
+			},
+			{
 				"backtrace" : 2,
 				"fragment" : "-lpthread",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 4,
-				"fragment" : "-lopenblas",
+				"backtrace" : 6,
+				"fragment" : "/home/drew-hubley/anaconda3/envs/xtensor-signal/lib/libopenblas.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 2,
+				"fragment" : "-lpthread",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-lm",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "-ldl",
 				"role" : "libraries"
 			}
 		],

@@ -122,21 +122,21 @@ build cmake_object_order_depends_target_test_xtensor_signal: phony || test/CMake
 
 build test/CMakeFiles/test_xtensor_signal.dir/main.cpp.o: CXX_COMPILER__test_xtensor_signal_Release /home/drew-hubley/xtensor-signal/test/main.cpp || cmake_object_order_depends_target_test_xtensor_signal
   DEP_FILE = test/CMakeFiles/test_xtensor_signal.dir/main.cpp.o.d
-  FLAGS = -march=native -Wunused-parameter -Wextra -Wreorder -Wconversion -fvisibility=hidden --verbose -std=c++14 -O3 -DNDEBUG
+  FLAGS = -march=native -Wunused-parameter -Wextra -Wreorder -Wconversion -fvisibility=hidden -std=c++14 -O3 -DNDEBUG
   INCLUDES = -I/home/drew-hubley/xtensor-signal/include -isystem /home/drew-hubley/anaconda3/envs/xtensor-signal/include
   OBJECT_DIR = test/CMakeFiles/test_xtensor_signal.dir
   OBJECT_FILE_DIR = test/CMakeFiles/test_xtensor_signal.dir
 
 build test/CMakeFiles/test_xtensor_signal.dir/test_config.cpp.o: CXX_COMPILER__test_xtensor_signal_Release /home/drew-hubley/xtensor-signal/test/test_config.cpp || cmake_object_order_depends_target_test_xtensor_signal
   DEP_FILE = test/CMakeFiles/test_xtensor_signal.dir/test_config.cpp.o.d
-  FLAGS = -march=native -Wunused-parameter -Wextra -Wreorder -Wconversion -fvisibility=hidden --verbose -std=c++14 -O3 -DNDEBUG
+  FLAGS = -march=native -Wunused-parameter -Wextra -Wreorder -Wconversion -fvisibility=hidden -std=c++14 -O3 -DNDEBUG
   INCLUDES = -I/home/drew-hubley/xtensor-signal/include -isystem /home/drew-hubley/anaconda3/envs/xtensor-signal/include
   OBJECT_DIR = test/CMakeFiles/test_xtensor_signal.dir
   OBJECT_FILE_DIR = test/CMakeFiles/test_xtensor_signal.dir
 
 build test/CMakeFiles/test_xtensor_signal.dir/savitzky_golay_test.cpp.o: CXX_COMPILER__test_xtensor_signal_Release /home/drew-hubley/xtensor-signal/test/savitzky_golay_test.cpp || cmake_object_order_depends_target_test_xtensor_signal
   DEP_FILE = test/CMakeFiles/test_xtensor_signal.dir/savitzky_golay_test.cpp.o.d
-  FLAGS = -march=native -Wunused-parameter -Wextra -Wreorder -Wconversion -fvisibility=hidden --verbose -std=c++14 -O3 -DNDEBUG
+  FLAGS = -march=native -Wunused-parameter -Wextra -Wreorder -Wconversion -fvisibility=hidden -std=c++14 -O3 -DNDEBUG
   INCLUDES = -I/home/drew-hubley/xtensor-signal/include -isystem /home/drew-hubley/anaconda3/envs/xtensor-signal/include
   OBJECT_DIR = test/CMakeFiles/test_xtensor_signal.dir
   OBJECT_FILE_DIR = test/CMakeFiles/test_xtensor_signal.dir
@@ -149,10 +149,10 @@ build test/CMakeFiles/test_xtensor_signal.dir/savitzky_golay_test.cpp.o: CXX_COM
 #############################################
 # Link the executable test/test_xtensor_signal
 
-build test/test_xtensor_signal: CXX_EXECUTABLE_LINKER__test_xtensor_signal_Release test/CMakeFiles/test_xtensor_signal.dir/main.cpp.o test/CMakeFiles/test_xtensor_signal.dir/test_config.cpp.o test/CMakeFiles/test_xtensor_signal.dir/savitzky_golay_test.cpp.o
-  FLAGS = -march=native -Wunused-parameter -Wextra -Wreorder -Wconversion -fvisibility=hidden --verbose -std=c++14 -O3 -DNDEBUG
+build test/test_xtensor_signal: CXX_EXECUTABLE_LINKER__test_xtensor_signal_Release test/CMakeFiles/test_xtensor_signal.dir/main.cpp.o test/CMakeFiles/test_xtensor_signal.dir/test_config.cpp.o test/CMakeFiles/test_xtensor_signal.dir/savitzky_golay_test.cpp.o | /home/drew-hubley/anaconda3/envs/xtensor-signal/lib/libopenblas.so
+  FLAGS = -march=native -Wunused-parameter -Wextra -Wreorder -Wconversion -fvisibility=hidden -std=c++14 -O3 -DNDEBUG
   LINK_FLAGS = -rdynamic
-  LINK_LIBRARIES = -lpthread  -lopenblas
+  LINK_LIBRARIES = -Wl,-rpath,/home/drew-hubley/anaconda3/envs/xtensor-signal/lib  -lpthread  /home/drew-hubley/anaconda3/envs/xtensor-signal/lib/libopenblas.so  -lpthread  -lm  -ldl
   OBJECT_DIR = test/CMakeFiles/test_xtensor_signal.dir
   POST_BUILD = :
   PRE_LINK = :

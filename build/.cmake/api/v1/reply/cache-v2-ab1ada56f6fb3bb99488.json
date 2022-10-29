@@ -1754,30 +1754,6 @@
 			"value" : "1"
 		},
 		{
-			"name" : "cblas_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for cblas."
-				}
-			],
-			"type" : "PATH",
-			"value" : "cblas_DIR-NOTFOUND"
-		},
-		{
-			"name" : "clib_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for clib."
-				}
-			],
-			"type" : "PATH",
-			"value" : "clib_DIR-NOTFOUND"
-		},
-		{
 			"name" : "doctest_DIR",
 			"properties" : 
 			[
@@ -1788,18 +1764,6 @@
 			],
 			"type" : "PATH",
 			"value" : "/home/drew-hubley/anaconda3/envs/xtensor-signal/lib/cmake/doctest"
-		},
-		{
-			"name" : "openblas_DIR",
-			"properties" : 
-			[
-				{
-					"name" : "HELPSTRING",
-					"value" : "The directory containing a CMake configuration file for openblas."
-				}
-			],
-			"type" : "PATH",
-			"value" : "openblas_DIR-NOTFOUND"
 		},
 		{
 			"name" : "xsimd_DIR",

@@ -60,7 +60,7 @@ add_library(xtensor-signal INTERFACE IMPORTED)
 
 set_target_properties(xtensor-signal PROPERTIES
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include"
-  INTERFACE_LINK_LIBRARIES "xtensor;xsimd;openblas"
+  INTERFACE_LINK_LIBRARIES "xtensor;xsimd;xtensor-blas"
 )
 
 if(CMAKE_VERSION VERSION_LESS 3.0.0)

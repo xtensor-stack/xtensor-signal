@@ -1,0 +1,473 @@
+The system is: Linux - 5.10.60.1-microsoft-standard-WSL2 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /home/drew-hubley/anaconda3/envs/xtensor/bin/gcc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/drew-hubley/xtensor-signal/build/CMakeFiles/3.24.2/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /home/drew-hubley/anaconda3/envs/xtensor/bin/g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/drew-hubley/xtensor-signal/build/CMakeFiles/3.24.2/CompilerIdCXX/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/drew-hubley/xtensor-signal/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/drew-hubley/anaconda3/envs/xtensor-signal/bin/ninja cmTC_052e7 && [1/2] Building C object CMakeFiles/cmTC_052e7.dir/CMakeCCompilerABI.c.o
+Reading specs from /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs
+could not find specs file conda.specs
+COLLECT_GCC=/home/drew-hubley/anaconda3/envs/xtensor/bin/gcc
+Target: x86_64-conda-linux-gnu
+Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-default-pie --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_build_env/x86_64-conda-linux-gnu/sysroot --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/include/c++/11.2.0 --with-pkgversion='conda-forge 11.2.0-15' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (conda-forge 11.2.0-15) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_052e7.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_052e7.dir/'
+ /home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/cc1 -quiet -v -iprefix /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/ -isysroot /home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot /home/drew-hubley/anaconda3/envs/xtensor-signal/share/cmake-3.24/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_052e7.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccDdjGCM.s
+GNU C17 (conda-forge 11.2.0-15) version 11.2.0 (x86_64-conda-linux-gnu)
+	compiled by GNU C version 11.2.0, GMP version 6.1.0, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include"
+ignoring nonexistent directory "/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"
+ignoring duplicate directory "/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed"
+ignoring duplicate directory "/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include
+ /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed
+ /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include
+ /home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/include
+End of search list.
+GNU C17 (conda-forge 11.2.0-15) version 11.2.0 (x86_64-conda-linux-gnu)
+	compiled by GNU C version 11.2.0, GMP version 6.1.0, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 5b900b9d84729c7c2f0fadfbc044eded
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_052e7.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_052e7.dir/'
+ /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_052e7.dir/CMakeCCompilerABI.c.o /tmp/ccDdjGCM.s
+GNU assembler version 2.36.1 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.36.1
+COMPILER_PATH=/home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/
+LIBRARY_PATH=/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../:/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_052e7.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_052e7.dir/CMakeCCompilerABI.c.'
+[2/2] Linking C executable cmTC_052e7
+Reading specs from /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs
+could not find specs file conda.specs
+COLLECT_GCC=/home/drew-hubley/anaconda3/envs/xtensor/bin/gcc
+COLLECT_LTO_WRAPPER=/home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper
+Target: x86_64-conda-linux-gnu
+Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-default-pie --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_build_env/x86_64-conda-linux-gnu/sysroot --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/include/c++/11.2.0 --with-pkgversion='conda-forge 11.2.0-15' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (conda-forge 11.2.0-15) 
+COMPILER_PATH=/home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/
+LIBRARY_PATH=/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../:/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_052e7' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_052e7.'
+ /home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/collect2 -plugin /home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/liblto_plugin.so -plugin-opt=/home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cchha994.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_052e7 /home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbeginS.o -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0 -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../.. -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib CMakeFiles/cmTC_052e7.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtendS.o /home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /home/drew-hubley/anaconda3/envs/xtensor/lib
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_052e7' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_052e7.'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include]
+    add: [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed]
+    add: [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include]
+    add: [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+  end of search list found
+  collapse include dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include] ==> [/home/drew-hubley/anaconda3/envs/xtensor/lib/gcc/x86_64-conda-linux-gnu/11.2.0/include]
+  collapse include dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed] ==> [/home/drew-hubley/anaconda3/envs/xtensor/lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed]
+  collapse include dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include] ==> [/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/include]
+  collapse include dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/include] ==> [/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/sysroot/usr/include]
+  implicit include dirs: [/home/drew-hubley/anaconda3/envs/xtensor/lib/gcc/x86_64-conda-linux-gnu/11.2.0/include;/home/drew-hubley/anaconda3/envs/xtensor/lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed;/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/include;/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/sysroot/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/drew-hubley/xtensor-signal/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/home/drew-hubley/anaconda3/envs/xtensor-signal/bin/ninja cmTC_052e7 && [1/2] Building C object CMakeFiles/cmTC_052e7.dir/CMakeCCompilerABI.c.o]
+  ignore line: [Reading specs from /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs]
+  ignore line: [could not find specs file conda.specs]
+  ignore line: [COLLECT_GCC=/home/drew-hubley/anaconda3/envs/xtensor/bin/gcc]
+  ignore line: [Target: x86_64-conda-linux-gnu]
+  ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-default-pie --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_build_env/x86_64-conda-linux-gnu/sysroot --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/include/c++/11.2.0 --with-pkgversion='conda-forge 11.2.0-15' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.0 (conda-forge 11.2.0-15) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_052e7.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_052e7.dir/']
+  ignore line: [ /home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/cc1 -quiet -v -iprefix /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/ -isysroot /home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot /home/drew-hubley/anaconda3/envs/xtensor-signal/share/cmake-3.24/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_052e7.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -o /tmp/ccDdjGCM.s]
+  ignore line: [GNU C17 (conda-forge 11.2.0-15) version 11.2.0 (x86_64-conda-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.1.0  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include"]
+  ignore line: [ignoring nonexistent directory "/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"]
+  ignore line: [ignoring duplicate directory "/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed"]
+  ignore line: [ignoring duplicate directory "/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include]
+  ignore line: [ /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed]
+  ignore line: [ /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include]
+  ignore line: [ /home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (conda-forge 11.2.0-15) version 11.2.0 (x86_64-conda-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.1.0  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 5b900b9d84729c7c2f0fadfbc044eded]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_052e7.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_052e7.dir/']
+  ignore line: [ /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_052e7.dir/CMakeCCompilerABI.c.o /tmp/ccDdjGCM.s]
+  ignore line: [GNU assembler version 2.36.1 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.36.1]
+  ignore line: [COMPILER_PATH=/home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../:/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_052e7.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_052e7.dir/CMakeCCompilerABI.c.']
+  ignore line: [[2/2] Linking C executable cmTC_052e7]
+  ignore line: [Reading specs from /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs]
+  ignore line: [could not find specs file conda.specs]
+  ignore line: [COLLECT_GCC=/home/drew-hubley/anaconda3/envs/xtensor/bin/gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper]
+  ignore line: [Target: x86_64-conda-linux-gnu]
+  ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-default-pie --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_build_env/x86_64-conda-linux-gnu/sysroot --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/include/c++/11.2.0 --with-pkgversion='conda-forge 11.2.0-15' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.0 (conda-forge 11.2.0-15) ]
+  ignore line: [COMPILER_PATH=/home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../:/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_052e7' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_052e7.']
+  link line: [ /home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/collect2 -plugin /home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/liblto_plugin.so -plugin-opt=/home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cchha994.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --sysroot=/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_052e7 /home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbeginS.o -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0 -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../.. -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib CMakeFiles/cmTC_052e7.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtendS.o /home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /home/drew-hubley/anaconda3/envs/xtensor/lib]
+    arg [/home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cchha994.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--sysroot=/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_052e7] ==> ignore
+    arg [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> obj [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o]
+    arg [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> obj [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o]
+    arg [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbeginS.o] ==> obj [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbeginS.o]
+    arg [-L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0] ==> dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0]
+    arg [-L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc] ==> dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc]
+    arg [-L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib]
+    arg [-L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib] ==> dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib]
+    arg [-L/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib]
+    arg [-L/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib]
+    arg [-L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib] ==> dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib]
+    arg [-L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../..] ==> dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../..]
+    arg [-L/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib]
+    arg [-L/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib]
+    arg [CMakeFiles/cmTC_052e7.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtendS.o] ==> obj [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtendS.o]
+    arg [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> obj [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o]
+    arg [-rpath] ==> ignore
+    arg [/home/drew-hubley/anaconda3/envs/xtensor/lib] ==> ignore
+  collapse obj [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> [/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o]
+  collapse obj [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> [/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o]
+  collapse obj [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbeginS.o] ==> [/home/drew-hubley/anaconda3/envs/xtensor/lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbeginS.o]
+  collapse obj [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtendS.o] ==> [/home/drew-hubley/anaconda3/envs/xtensor/lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtendS.o]
+  collapse obj [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> [/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+  collapse library dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0] ==> [/home/drew-hubley/anaconda3/envs/xtensor/lib/gcc/x86_64-conda-linux-gnu/11.2.0]
+  collapse library dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc] ==> [/home/drew-hubley/anaconda3/envs/xtensor/lib/gcc]
+  collapse library dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> [/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/lib]
+  collapse library dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib] ==> [/home/drew-hubley/anaconda3/envs/xtensor/lib]
+  collapse library dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> [/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/sysroot/lib]
+  collapse library dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> [/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/sysroot/usr/lib]
+  collapse library dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib] ==> [/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/lib]
+  collapse library dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../..] ==> [/home/drew-hubley/anaconda3/envs/xtensor/lib]
+  collapse library dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> [/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/sysroot/lib]
+  collapse library dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> [/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/sysroot/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o;/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o;/home/drew-hubley/anaconda3/envs/xtensor/lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbeginS.o;/home/drew-hubley/anaconda3/envs/xtensor/lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtendS.o;/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+  implicit dirs: [/home/drew-hubley/anaconda3/envs/xtensor/lib/gcc/x86_64-conda-linux-gnu/11.2.0;/home/drew-hubley/anaconda3/envs/xtensor/lib/gcc;/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/lib;/home/drew-hubley/anaconda3/envs/xtensor/lib;/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/sysroot/lib;/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/sysroot/usr/lib]
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/drew-hubley/xtensor-signal/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/drew-hubley/anaconda3/envs/xtensor-signal/bin/ninja cmTC_216cb && [1/2] Building CXX object CMakeFiles/cmTC_216cb.dir/CMakeCXXCompilerABI.cpp.o
+Reading specs from /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs
+could not find specs file conda.specs
+COLLECT_GCC=/home/drew-hubley/anaconda3/envs/xtensor/bin/g++
+Target: x86_64-conda-linux-gnu
+Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-default-pie --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_build_env/x86_64-conda-linux-gnu/sysroot --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/include/c++/11.2.0 --with-pkgversion='conda-forge 11.2.0-15' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (conda-forge 11.2.0-15) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_216cb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_216cb.dir/'
+ /home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/cc1plus -quiet -v -iprefix /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/ -isysroot /home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE /home/drew-hubley/anaconda3/envs/xtensor-signal/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_216cb.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccFrxITM.s
+GNU C++17 (conda-forge 11.2.0-15) version 11.2.0 (x86_64-conda-linux-gnu)
+	compiled by GNU C version 11.2.0, GMP version 6.1.0, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include"
+ignoring nonexistent directory "/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"
+ignoring duplicate directory "/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed"
+ignoring duplicate directory "/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include
+ /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed
+ /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include
+ /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0
+ /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu
+ /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0/backward
+ /home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/include
+End of search list.
+GNU C++17 (conda-forge 11.2.0-15) version 11.2.0 (x86_64-conda-linux-gnu)
+	compiled by GNU C version 11.2.0, GMP version 6.1.0, MPFR version 3.1.6, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 5c2be4b43dbb63b52f44ae202e2487c6
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_216cb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_216cb.dir/'
+ /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_216cb.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccFrxITM.s
+GNU assembler version 2.36.1 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.36.1
+COMPILER_PATH=/home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/
+LIBRARY_PATH=/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../:/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_216cb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_216cb.dir/CMakeCXXCompilerABI.cpp.'
+[2/2] Linking CXX executable cmTC_216cb
+Reading specs from /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs
+could not find specs file conda.specs
+COLLECT_GCC=/home/drew-hubley/anaconda3/envs/xtensor/bin/g++
+COLLECT_LTO_WRAPPER=/home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper
+Target: x86_64-conda-linux-gnu
+Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-default-pie --enable-languages=c,c++,fortran,objc,obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_build_env/x86_64-conda-linux-gnu/sysroot --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/include/c++/11.2.0 --with-pkgversion='conda-forge 11.2.0-15' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose
+Thread model: posix
+Supported LTO compression algorithms: zlib
+gcc version 11.2.0 (conda-forge 11.2.0-15) 
+COMPILER_PATH=/home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/
+LIBRARY_PATH=/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../:/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_216cb' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_216cb.'
+ /home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/collect2 -plugin /home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/liblto_plugin.so -plugin-opt=/home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6m0of6.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_216cb /home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbeginS.o -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0 -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../.. -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib CMakeFiles/cmTC_216cb.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtendS.o /home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /home/drew-hubley/anaconda3/envs/xtensor/lib
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_216cb' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_216cb.'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include]
+    add: [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed]
+    add: [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include]
+    add: [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0]
+    add: [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu]
+    add: [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0/backward]
+    add: [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+  end of search list found
+  collapse include dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include] ==> [/home/drew-hubley/anaconda3/envs/xtensor/lib/gcc/x86_64-conda-linux-gnu/11.2.0/include]
+  collapse include dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed] ==> [/home/drew-hubley/anaconda3/envs/xtensor/lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed]
+  collapse include dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include] ==> [/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/include]
+  collapse include dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0] ==> [/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/include/c++/11.2.0]
+  collapse include dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu] ==> [/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu]
+  collapse include dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0/backward] ==> [/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/include/c++/11.2.0/backward]
+  collapse include dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/include] ==> [/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/sysroot/usr/include]
+  implicit include dirs: [/home/drew-hubley/anaconda3/envs/xtensor/lib/gcc/x86_64-conda-linux-gnu/11.2.0/include;/home/drew-hubley/anaconda3/envs/xtensor/lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed;/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/include;/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/include/c++/11.2.0;/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu;/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/include/c++/11.2.0/backward;/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/sysroot/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/drew-hubley/xtensor-signal/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/home/drew-hubley/anaconda3/envs/xtensor-signal/bin/ninja cmTC_216cb && [1/2] Building CXX object CMakeFiles/cmTC_216cb.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [Reading specs from /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs]
+  ignore line: [could not find specs file conda.specs]
+  ignore line: [COLLECT_GCC=/home/drew-hubley/anaconda3/envs/xtensor/bin/g++]
+  ignore line: [Target: x86_64-conda-linux-gnu]
+  ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-default-pie --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_build_env/x86_64-conda-linux-gnu/sysroot --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/include/c++/11.2.0 --with-pkgversion='conda-forge 11.2.0-15' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.0 (conda-forge 11.2.0-15) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_216cb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_216cb.dir/']
+  ignore line: [ /home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/cc1plus -quiet -v -iprefix /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/ -isysroot /home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot -D_GNU_SOURCE /home/drew-hubley/anaconda3/envs/xtensor-signal/share/cmake-3.24/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_216cb.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -o /tmp/ccFrxITM.s]
+  ignore line: [GNU C++17 (conda-forge 11.2.0-15) version 11.2.0 (x86_64-conda-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.1.0  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include"]
+  ignore line: [ignoring nonexistent directory "/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/local/include"]
+  ignore line: [ignoring duplicate directory "/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed"]
+  ignore line: [ignoring duplicate directory "/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/../../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include]
+  ignore line: [ /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/include-fixed]
+  ignore line: [ /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/include]
+  ignore line: [ /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0]
+  ignore line: [ /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0/x86_64-conda-linux-gnu]
+  ignore line: [ /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/../../x86_64-conda-linux-gnu/include/c++/11.2.0/backward]
+  ignore line: [ /home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++17 (conda-forge 11.2.0-15) version 11.2.0 (x86_64-conda-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.2.0  GMP version 6.1.0  MPFR version 3.1.6  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 5c2be4b43dbb63b52f44ae202e2487c6]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_216cb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_216cb.dir/']
+  ignore line: [ /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/as -v --64 -o CMakeFiles/cmTC_216cb.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccFrxITM.s]
+  ignore line: [GNU assembler version 2.36.1 (x86_64-conda-linux-gnu) using BFD version (GNU Binutils) 2.36.1]
+  ignore line: [COMPILER_PATH=/home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../:/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_216cb.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_216cb.dir/CMakeCXXCompilerABI.cpp.']
+  ignore line: [[2/2] Linking CXX executable cmTC_216cb]
+  ignore line: [Reading specs from /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/specs]
+  ignore line: [could not find specs file conda.specs]
+  ignore line: [COLLECT_GCC=/home/drew-hubley/anaconda3/envs/xtensor/bin/g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper]
+  ignore line: [Target: x86_64-conda-linux-gnu]
+  ignore line: [Configured with: ../configure --prefix=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho --with-slibdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --libdir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/lib --mandir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/man --build=x86_64-conda-linux-gnu --host=x86_64-conda-linux-gnu --target=x86_64-conda-linux-gnu --enable-default-pie --enable-languages=c c++ fortran objc obj-c++ --enable-__cxa_atexit --disable-libmudflap --enable-libgomp --disable-libssp --enable-libquadmath --enable-libquadmath-support --enable-libsanitizer --enable-lto --enable-threads=posix --enable-target-optspace --enable-plugin --enable-gold --disable-nls --disable-bootstrap --disable-multilib --enable-long-long --with-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/sysroot --with-build-sysroot=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_build_env/x86_64-conda-linux-gnu/sysroot --with-gxx-include-dir=/home/conda/feedstock_root/build_artifacts/gcc_compilers_1649355356991/_h_env_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placehold_placeho/x86_64-conda-linux-gnu/include/c++/11.2.0 --with-pkgversion='conda-forge 11.2.0-15' --with-bugurl=https://github.com/conda-forge/ctng-compilers-feedstock/issues/new/choose]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib]
+  ignore line: [gcc version 11.2.0 (conda-forge 11.2.0-15) ]
+  ignore line: [COMPILER_PATH=/home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/bin/]
+  ignore line: [LIBRARY_PATH=/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../:/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib/:/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_216cb' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_216cb.']
+  link line: [ /home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/collect2 -plugin /home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/liblto_plugin.so -plugin-opt=/home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc6m0of6.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --sysroot=/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot --eh-frame-hdr -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -o cmTC_216cb /home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o /home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbeginS.o -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0 -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../.. -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib -L/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib CMakeFiles/cmTC_216cb.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtendS.o /home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o -rpath /home/drew-hubley/anaconda3/envs/xtensor/lib]
+    arg [/home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/home/drew-hubley/anaconda3/envs/xtensor/bin/../libexec/gcc/x86_64-conda-linux-gnu/11.2.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc6m0of6.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--sysroot=/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_216cb] ==> ignore
+    arg [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> obj [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o]
+    arg [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> obj [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o]
+    arg [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbeginS.o] ==> obj [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbeginS.o]
+    arg [-L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0] ==> dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0]
+    arg [-L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc] ==> dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc]
+    arg [-L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib]
+    arg [-L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib] ==> dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib]
+    arg [-L/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib]
+    arg [-L/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib]
+    arg [-L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib] ==> dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib]
+    arg [-L/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../..] ==> dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../..]
+    arg [-L/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib]
+    arg [-L/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib]
+    arg [CMakeFiles/cmTC_216cb.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtendS.o] ==> obj [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtendS.o]
+    arg [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> obj [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o]
+    arg [-rpath] ==> ignore
+    arg [/home/drew-hubley/anaconda3/envs/xtensor/lib] ==> ignore
+  collapse obj [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/Scrt1.o] ==> [/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o]
+  collapse obj [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crti.o] ==> [/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o]
+  collapse obj [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbeginS.o] ==> [/home/drew-hubley/anaconda3/envs/xtensor/lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbeginS.o]
+  collapse obj [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtendS.o] ==> [/home/drew-hubley/anaconda3/envs/xtensor/lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtendS.o]
+  collapse obj [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib/crtn.o] ==> [/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+  collapse library dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0] ==> [/home/drew-hubley/anaconda3/envs/xtensor/lib/gcc/x86_64-conda-linux-gnu/11.2.0]
+  collapse library dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc] ==> [/home/drew-hubley/anaconda3/envs/xtensor/lib/gcc]
+  collapse library dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib/../lib] ==> [/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/lib]
+  collapse library dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../lib] ==> [/home/drew-hubley/anaconda3/envs/xtensor/lib]
+  collapse library dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib/../lib] ==> [/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/sysroot/lib]
+  collapse library dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib/../lib] ==> [/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/sysroot/usr/lib]
+  collapse library dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../../../x86_64-conda-linux-gnu/lib] ==> [/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/lib]
+  collapse library dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../lib/gcc/x86_64-conda-linux-gnu/11.2.0/../../..] ==> [/home/drew-hubley/anaconda3/envs/xtensor/lib]
+  collapse library dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/lib] ==> [/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/sysroot/lib]
+  collapse library dir [/home/drew-hubley/anaconda3/envs/xtensor/bin/../x86_64-conda-linux-gnu/sysroot/usr/lib] ==> [/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/sysroot/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit objs: [/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/sysroot/usr/lib/Scrt1.o;/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/sysroot/usr/lib/crti.o;/home/drew-hubley/anaconda3/envs/xtensor/lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtbeginS.o;/home/drew-hubley/anaconda3/envs/xtensor/lib/gcc/x86_64-conda-linux-gnu/11.2.0/crtendS.o;/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/sysroot/usr/lib/crtn.o]
+  implicit dirs: [/home/drew-hubley/anaconda3/envs/xtensor/lib/gcc/x86_64-conda-linux-gnu/11.2.0;/home/drew-hubley/anaconda3/envs/xtensor/lib/gcc;/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/lib;/home/drew-hubley/anaconda3/envs/xtensor/lib;/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/sysroot/lib;/home/drew-hubley/anaconda3/envs/xtensor/x86_64-conda-linux-gnu/sysroot/usr/lib]
+  implicit fwks: []
+
+
+Performing C++ SOURCE FILE Test arch_native_supported succeeded with the following output:
+Change Dir: /home/drew-hubley/xtensor-signal/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/drew-hubley/anaconda3/envs/xtensor-signal/bin/ninja cmTC_c2b82 && [1/2] Building CXX object CMakeFiles/cmTC_c2b82.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_c2b82
+
+
+Source file was:
+int main() { return 0; }
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/drew-hubley/xtensor-signal/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/drew-hubley/anaconda3/envs/xtensor-signal/bin/ninja cmTC_bbb40 && [1/2] Building C object CMakeFiles/cmTC_bbb40.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_bbb40
+
+
+
+Determining if the function sgemm_ exists passed with the following output:
+Change Dir: /home/drew-hubley/xtensor-signal/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/drew-hubley/anaconda3/envs/xtensor-signal/bin/ninja cmTC_659f8 && [1/2] Building C object CMakeFiles/cmTC_659f8.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_659f8
+
+
+
+Determining if the function cheev_ exists passed with the following output:
+Change Dir: /home/drew-hubley/xtensor-signal/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/drew-hubley/anaconda3/envs/xtensor-signal/bin/ninja cmTC_b30f8 && [1/2] Building C object CMakeFiles/cmTC_b30f8.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_b30f8
+
+
+
+Performing C++ SOURCE FILE Test HAS_CPP14_FLAG succeeded with the following output:
+Change Dir: /home/drew-hubley/xtensor-signal/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/home/drew-hubley/anaconda3/envs/xtensor-signal/bin/ninja cmTC_269e3 && [1/2] Building CXX object CMakeFiles/cmTC_269e3.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_269e3
+
+
+Source file was:
+int main() { return 0; }

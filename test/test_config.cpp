@@ -6,11 +6,11 @@
 * The full license is in the file LICENSE, distributed with this software. *
 ****************************************************************************/
 
-#include "doctest/doctest.hpp"
+#include "doctest/doctest.h"
 
 #include "xtensor-signal/xtensor_signal.hpp"
 
-namespace xtensor-signal
+namespace xtensor_signal
 {
     TEST_SUITE("config")
     {

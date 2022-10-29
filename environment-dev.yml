@@ -9,4 +9,3 @@ dependencies:
   - xsimd
   - xtensor=0.24.0
   - doctest
-

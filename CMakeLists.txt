@@ -31,7 +31,7 @@ message(STATUS "xtensor-signal v${${PROJECT_NAME}_VERSION}")
 # Dependencies
 # ============
 
-set(xsimd_REQUIRED_VERSION 9.0.1)
+set(xsimd_REQUIRED_VERSION 8.1.0)
 if(TARGET xsimd)
     set(xsimd_VERSION ${XSIMD_VERSION_MAJOR}.${XSIMD_VERSION_MINOR}.${XSIMD_VERSION_PATCH})
     # Note: This is not SEMVER compatible comparison
@@ -59,21 +59,24 @@ else()
     find_package(xtensor ${xtensor_REQUIRED_VERSION} REQUIRED)
     message(STATUS "Found xtensor: ${xtensor_INCLUDE_DIRS}/xtensor")
 endif()
+
+find_package(xtensor-blas)
     
 # Build
 # =====
 
 set(XTENSOR_SIGNAL_HEADERS
     ${XTENSOR_SIGNAL_INCLUDE_DIR}/xtensor-signal/xtensor_signal.hpp
+    ${XTENSOR_SIGNAL_INCLUDE_DIR}/xtensor-signal/savitzky_golay.hpp
     )
 
 add_library(xtensor-signal INTERFACE)
 
 target_include_directories(xtensor-signal INTERFACE
-    $<BUILD_INTERFACE:${XTENSOR_SIGNAL_INCLUDE_DIR>
+    $<BUILD_INTERFACE:${XTENSOR_SIGNAL_INCLUDE_DIR}>
     $<INSTALL_INTERFACE:include>)
 
-target_link_libraries(xtensor-signal INTERFACE xtensor xsimd)
+target_link_libraries(xtensor-signal INTERFACE xtensor xsimd openblas)
 
 OPTION(BUILD_TESTS "xtensor test suite" OFF)
 

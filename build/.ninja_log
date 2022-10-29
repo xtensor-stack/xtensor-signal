@@ -1,0 +1,8 @@
+# ninja log v5
+3	4467	1667003239582287274	test/CMakeFiles/test_xtensor_signal.dir/main.cpp.o	48e8364a97575f4b
+3	74	1667003235192287238	test/CMakeFiles/test_xtensor_signal.dir/test_config.cpp.o	8762e60417652ab6
+1	4	0	clean	9d7dbaac2cd114f2
+4	7316	1667003242432287298	test/CMakeFiles/test_xtensor_signal.dir/savitzky_golay_test.cpp.o	6441fe357ee3c156
+4	78	1667003411532288717	test/CMakeFiles/test_xtensor_signal.dir/test_config.cpp.o	38464ab5b2aeeda2
+4	4165	1667003415622288751	test/CMakeFiles/test_xtensor_signal.dir/main.cpp.o	703c340fc7928e98
+4	6872	1667003418322288774	test/CMakeFiles/test_xtensor_signal.dir/savitzky_golay_test.cpp.o	e555a038e871d6a2

@@ -10,7 +10,7 @@
 
 #include "xtensor-signal/xtensor_signal.hpp"
 
-namespace xtensor_signal
+namespace xt
 {
     TEST_SUITE("config")
     {

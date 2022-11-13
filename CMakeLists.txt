@@ -67,7 +67,6 @@ find_package(xtensor-blas)
 
 set(XTENSOR_SIGNAL_HEADERS
     ${XTENSOR_SIGNAL_INCLUDE_DIR}/xtensor-signal/xtensor_signal.hpp
-    ${XTENSOR_SIGNAL_INCLUDE_DIR}/xtensor-signal/savitzky_golay.hpp
     ${XTENSOR_SIGNAL_INCLUDE_DIR}/xtensor-signal/find_peaks.hpp
     )
 

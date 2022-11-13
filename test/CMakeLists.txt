@@ -49,8 +49,6 @@ set(XTENSOR_SIGNAL_TESTS
     main.cpp
     test_config.cpp
     find_peaks_test.cpp
-    savitzky_golay_test.cpp
-
 )
 
 add_executable(test_xtensor_signal ${XTENSOR_SIGNAL_TESTS} ${XTENSOR_SIGNAL_HEADERS})

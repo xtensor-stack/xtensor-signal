@@ -31,7 +31,7 @@ message(STATUS "xtensor-signal v${${PROJECT_NAME}_VERSION}")
 # Dependencies
 # ============
 
-set(xsimd_REQUIRED_VERSION 8.1.0)
+set(xsimd_REQUIRED_VERSION 9.0.1)
 if(TARGET xsimd)
     set(xsimd_VERSION ${XSIMD_VERSION_MAJOR}.${XSIMD_VERSION_MINOR}.${XSIMD_VERSION_PATCH})
     # Note: This is not SEMVER compatible comparison
@@ -61,7 +61,7 @@ else()
 endif()
 
 find_package(xtensor-blas)
-    
+
 # Build
 # =====
 

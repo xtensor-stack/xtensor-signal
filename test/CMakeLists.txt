@@ -50,7 +50,7 @@ include_directories(${GTEST_INCLUDE_DIRS})
 set(XTENSOR_SIGNAL_TESTS
     main.cpp
     test_config.cpp
-    savitzky_golay_test
+    savitzky_golay_test.cpp
 )
 
 add_executable(test_xtensor_signal ${XTENSOR_SIGNAL_TESTS} ${XTENSOR_SIGNAL_HEADERS})

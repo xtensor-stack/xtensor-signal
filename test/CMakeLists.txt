@@ -22,26 +22,23 @@ if (CMAKE_CURRENT_SOURCE_DIR STREQUAL CMAKE_SOURCE_DIR)
     set(XTENSOR_SIGNAL_INCLUDE_DIR ${xtensor-signal_INCLUDE_DIRS})
 endif ()
 
-message(STATUS "Forcing tests build type to Release")
-set(CMAKE_BUILD_TYPE Release CACHE STRING "Choose the type of build." FORCE)
-
 include(CheckCXXCompilerFlag)
 
 string(TOUPPER "${CMAKE_BUILD_TYPE}" U_CMAKE_BUILD_TYPE)
 
 if (CMAKE_CXX_COMPILER_ID MATCHES "Clang" OR CMAKE_CXX_COMPILER_ID MATCHES "GNU" OR CMAKE_CXX_COMPILER_ID MATCHES "Intel")
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=native -Wunused-parameter -Wextra -Wreorder -Wconversion -fvisibility=hidden")
-    CHECK_CXX_COMPILER_FLAG("-std=c++14" HAS_CPP14_FLAG)
+    CHECK_CXX_COMPILER_FLAG("-std=c++17" HAS_CPP17_FLAG)
 
-    if (HAS_CPP14_FLAG)
-        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
+    if (HAS_CPP17_FLAG)
+        set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17")
     else()
-        message(FATAL_ERROR "Unsupported compiler -- xtensor-signal requires C++14 support!")
+        message(FATAL_ERROR "Unsupported compiler -- xtensor-signal requires C++17 support!")
     endif()
 endif()
 
 if(MSVC)
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /EHsc /MP /bigobj")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /EHsc /MP /bigobj /std:c++17")
     set(CMAKE_EXE_LINKER_FLAGS /MANIFEST:NO)
 endif()
 
@@ -51,6 +48,7 @@ find_package(Threads)
 set(XTENSOR_SIGNAL_TESTS
     main.cpp
     test_config.cpp
+    find_peaks_test.cpp
 )
 
 add_executable(test_xtensor_signal ${XTENSOR_SIGNAL_TESTS} ${XTENSOR_SIGNAL_HEADERS})

@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+/.vs
+/out
+/build
+/env
+/CMakeSettings.json
+.vscode/settings.json

@@ -16,15 +16,15 @@ set(XTENSOR_SIGNAL_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/include)
 # ==========
 
 set(XTENSOR_SIGNAL_CONFIG_FILE
-    "${XTENSOR_SIGNAL_INCLUDE_DIR}/xtensor-signal/xtensor_python_config.hpp")
-file(STRINGS ${XTENSOR_SIGNAL_CONFIG_FILE} xtensor_python_version_defines
+    "${XTENSOR_SIGNAL_INCLUDE_DIR}/xtensor-signal/xtensor_signal.hpp")
+file(STRINGS ${XTENSOR_SIGNAL_CONFIG_FILE} xtensor_signal_version_defines
     REGEX "#define XTENSOR_SIGNAL_VERSION_(MAJOR|MINOR|PATCH)")
-foreach(ver ${xtensor_python_version_defines})
+foreach(ver ${xtensor_signal_version_defines})
     if(ver MATCHES "#define XTENSOR_SIGNAL_VERSION_(MAJOR|MINOR|PATCH) +([^ ]+)$")
         set(XTENSOR_SIGNAL_VERSION_${CMAKE_MATCH_1} "${CMAKE_MATCH_2}" CACHE INTERNAL "")
     endif()
 endforeach()
-set(${PROJECT_NAME}_VERSION 
+set(${PROJECT_NAME}_VERSION
     ${XTENSOR_SIGNAL_VERSION_MAJOR}.${XTENSOR_SIGNAL_VERSION_MINOR}.${XTENSOR_SIGNAL_VERSION_PATCH})
 message(STATUS "xtensor-signal v${${PROJECT_NAME}_VERSION}")
 
@@ -46,7 +46,7 @@ else()
 endif()
 
 
-set(xtensor_REQUIRED_VERSION 0.24.0)
+set(xtensor_REQUIRED_VERSION 0.24.6)
 if(TARGET xtensor)
     set(xtensor_VERSION ${XTENSOR_VERSION_MAJOR}.${XTENSOR_VERSION_MINOR}.${XTENSOR_VERSION_PATCH})
     # Note: This is not SEMVER compatible comparison
@@ -59,18 +59,19 @@ else()
     find_package(xtensor ${xtensor_REQUIRED_VERSION} REQUIRED)
     message(STATUS "Found xtensor: ${xtensor_INCLUDE_DIRS}/xtensor")
 endif()
-    
+
 # Build
 # =====
 
 set(XTENSOR_SIGNAL_HEADERS
     ${XTENSOR_SIGNAL_INCLUDE_DIR}/xtensor-signal/xtensor_signal.hpp
+    ${XTENSOR_SIGNAL_INCLUDE_DIR}/xtensor-signal/find_peaks.hpp
     )
 
 add_library(xtensor-signal INTERFACE)
 
 target_include_directories(xtensor-signal INTERFACE
-    $<BUILD_INTERFACE:${XTENSOR_SIGNAL_INCLUDE_DIR>
+    $<BUILD_INTERFACE:${XTENSOR_SIGNAL_INCLUDE_DIR}>
     $<INSTALL_INTERFACE:include>)
 
 target_link_libraries(xtensor-signal INTERFACE xtensor xsimd)
@@ -119,4 +120,3 @@ install(FILES ${CMAKE_CURRENT_BINARY_DIR}/${PROJECT_NAME}Config.cmake
 install(EXPORT ${PROJECT_NAME}-targets
         FILE ${PROJECT_NAME}Targets.cmake
         DESTINATION ${XTENSOR_SIGNAL_CMAKECONFIG_INSTALL_DIR})
-

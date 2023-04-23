@@ -1,0 +1,84 @@
+name: CI
+
+on: push
+
+jobs:
+
+  unix:
+
+    strategy:
+      fail-fast: false
+      matrix:
+        runs-on: [ubuntu-latest, macos-latest]
+
+    name: ${{ matrix.runs-on }} • x64 ${{ matrix.args }}
+    runs-on: ${{ matrix.runs-on }}
+
+    steps:
+
+    - name: Basic GitHub action setup
+      uses: actions/checkout@v2
+
+    - name: Set conda environment
+      uses: mamba-org/provision-with-micromamba@main
+      with:
+        environment-name: myenv
+        environment-file: environment-dev.yml
+        cache-env: true
+        extra-specs: |
+          ninja
+    - name: Configure using CMake
+      shell: bash -l {0}
+      run: cmake -Bbuild -G "Ninja" -DCMAKE_INSTALL_PREFIX=$CONDA_PREFIX -DBUILD_TESTS=ON
+
+    - name: Install
+      shell: bash -l {0}
+      working-directory: build
+      run: cmake --install .
+
+    - name: Build xtensor-signal
+      shell: bash -l {0}
+      working-directory: build
+      run: cmake --build .
+
+    - name: Test xtensor-signal
+      shell: bash -l {0}
+      working-directory: build/test
+      run: ./test_xtensor_signal
+
+  windows:
+
+    strategy:
+      fail-fast: false
+      matrix:
+        runs-on: [windows-latest]
+
+    name: ${{ matrix.runs-on }} • x64 ${{ matrix.args }}
+    runs-on: ${{ matrix.runs-on }}
+    steps:
+    - uses: actions/checkout@v3
+    - uses: ilammy/msvc-dev-cmd@v1
+    - name: Install Conda environment from environment.yml
+      uses: mamba-org/provision-with-micromamba@main
+      with:
+        environment-name: myenv
+        environment-file: environment-dev.yml
+        cache-env: true
+        extra-specs: |
+          ninja
+
+    - name: Configure using CMake
+      shell: powershell
+      run: |
+        cmake -Bbuild -G "Ninja" -DCMAKE_INSTALL_PREFIX=$CONDA_PREFIX -DBUILD_TESTS=ON
+
+    - name: Build xtensor-signal
+      shell: powershell
+      working-directory: build
+      run: |
+        cmake --build .
+
+    - name: Test xtensor-signal
+      shell: powershell
+      working-directory: build/test
+      run: ./test_xtensor_signal

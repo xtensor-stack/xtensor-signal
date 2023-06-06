@@ -1,12 +1,16 @@
 name: xtensor-signal
 channels:
-  - conda-forge
+- conda-forge
 dependencies:
   # Build dependencies
-  - cmake
-  - ninja
+- cmake
+- ninja
   # Host dependencies
-  - xsimd
-  - xtensor=0.24.3
-  - doctest
-
+- xsimd
+- xtensor=0.24.6
+- xtensor-io
+- xtensor-blas
+- lapack
+- openblas
+- doctest
+- zlib

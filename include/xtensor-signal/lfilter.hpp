@@ -18,6 +18,7 @@ namespace detail {
 template <typename E1, typename E2, typename E3, typename E4>
 inline auto lfilter(E1 &&b, E2 &&a, E3 &&x, E4 zi) {
   using value_type = typename std::decay_t<E3>::value_type;
+  using size_type = typename std::decay_t<E3>::size_type;
   if (zi.shape(0) != x.shape(0)) {
     XTENSOR_THROW(
         std::runtime_error,
@@ -38,7 +39,7 @@ inline auto lfilter(E1 &&b, E2 &&a, E3 &&x, E4 zi) {
   xt::xtensor<value_type, 1> out = xt::zeros_like(x);
   auto padded_x = xt::pad(x, b.shape(0) - 1);
   auto padded_out = xt::pad(out, a.shape(0) - 1);
-  for (int i = 0; i < x.shape(0); i++) {
+  for (size_type i = 0; i < x.shape(0); i++) {
     auto b_accum =
         xt::sum(b *
                 xt::flip(xt::view(padded_x, xt::range(i, i + b.shape(0))))) +

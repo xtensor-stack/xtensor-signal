@@ -37,8 +37,8 @@ inline auto lfilter(E1 &&b, E2 &&a, E3 &&x, E4 zi) {
                   "Implementation only works on 1D arguments");
   }
   xt::xtensor<value_type, 1> out = xt::zeros_like(x);
+  auto padded_x = xt::pad(x, b.shape(0) - 1);
   for (size_type i = 0; i < x.shape(0); i++) {
-    auto padded_x = xt::pad(x, b.shape(0) - 1);
     auto b_accum =
         xt::sum(b *
                 xt::flip(xt::view(padded_x, xt::range(i, i + b.shape(0))))) +

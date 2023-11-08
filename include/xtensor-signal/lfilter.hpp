@@ -36,21 +36,22 @@ inline auto lfilter(E1 &&b, E2 &&a, E3 &&x, E4 zi) {
     XTENSOR_THROW(std::runtime_error,
                   "Implementation only works on 1D arguments");
   }
-  xt::xtensor<value_type, 1> out = xt::zeros_like(x);
+  xt::xtensor<value_type, 1> out = xt::zeros<value_type>({x.shape(0) + 2*(a.shape(0) - 1)});
   auto padded_x = xt::pad(x, b.shape(0) - 1);
   for (size_type i = 0; i < x.shape(0); i++) {
     auto b_accum =
         xt::sum(b *
                 xt::flip(xt::view(padded_x, xt::range(i, i + b.shape(0))))) +
         zi(i);
-    auto padded_out = xt::pad(out, a.shape(0) - 1);
+
     auto a_accum =
         b_accum - xt::sum(xt::view(a, xt::range(1, xt::placeholders::_)) *
-                          xt::flip(xt::view(padded_out,
+                          xt::flip(xt::view(out,
                                             xt::range(i, i + a.shape(0) - 1))));
     auto result = a_accum / a(0);
-    out(i) = result();
+    out(i + a.shape(0) - 1) = result();
   }
+  out = xt::view(out, xt::range(a.shape(0) - 1, -(a.shape(0) - 1)));
   return out;
 }
 } // namespace detail

@@ -5,22 +5,26 @@
 #include <xtensor/xarray.hpp>
 #include <xtensor/xbuilder.hpp>
 #include <xtensor/xview.hpp>
-
+#include <xtl/xcomplex.hpp>
 #include <stdexcept>
 
 namespace xt::fft {
-template <class E> inline auto fft(E &&e) {
+
+template <class E, typename std::enable_if<xtl::is_complex<typename std::decay<E>::type::value_type>::value, bool>::type = true> 
+inline auto fft(E &&e) {
   using namespace xt::placeholders;
   using namespace std::complex_literals;
+  using value_type = typename std::decay_t<E>::value_type;
+  using precision = typename value_type::value_type;
   auto N = e.size();
-  auto pi = xt::numeric_constants<double>::PI;
+  auto pi = xt::numeric_constants<precision>::PI;
   auto ev = xt::eval(e);
   if (N <= 1) {
     return ev;
   } else {
 #ifdef XTENSOR_USE_TBB
-    xt::xarray<std::complex<float>> even;
-    xt::xarray<std::complex<float>> odd;
+    xt::xarray<value_type> even;
+    xt::xarray<value_type> odd;
     oneapi::tbb::parallel_invoke(
         [&] { even = fft(xt::view(ev, xt::range(0, _, 2))); },
         [&] { odd = fft(xt::view(ev, xt::range(1, _, 2))); });
@@ -30,14 +34,21 @@ template <class E> inline auto fft(E &&e) {
 #endif
 
     auto range = xt::arange<double>(N / 2);
-    auto exp = xt::exp(-2i * pi * range / N);
+    auto exp = xt::exp(static_cast<value_type>(-2i) * pi * range / N);
     auto t = exp * odd;
     auto first_half = even + t;
     auto second_half = even - t;
-    auto spectrum = xt::xtensor<std::complex<float>, 1>::from_shape({N});
+    auto spectrum = xt::xtensor<value_type, 1>::from_shape({N});
     xt::view(spectrum, xt::range(0, N / 2)) = first_half;
     xt::view(spectrum, xt::range(N / 2, N)) = second_half;
     return spectrum;
   }
+}
+
+template <class E, typename std::enable_if<!xtl::is_complex<typename std::decay<E>::type::value_type>::value, bool>::type = true> 
+inline auto fft(E&& e) 
+{
+    using value_type = typename std::decay<E>::type::value_type;
+    return fft(xt::cast<std::complex<value_type>>(e));
 }
 } // namespace xt::fft

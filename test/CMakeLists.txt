@@ -40,6 +40,7 @@ set(XTENSOR_SIGNAL_TESTS
     test_config.cpp
     find_peaks_test.cpp
     lfilter_test.cpp
+    fft_test.cpp
 )
 
 if(CMAKE_CXX_COMPILER_ID MATCHES "MSVC")

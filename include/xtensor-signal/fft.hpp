@@ -7,11 +7,13 @@
 #include <xtensor/xbuilder.hpp>
 #include <xtensor/xview.hpp>
 #include <xtl/xcomplex.hpp>
+#include <xtensor/xarray.hpp>
+#include <xtensor/xnoalias.hpp>
+#include <xtensor/xaxis_slice_iterator.hpp>
 
 namespace xt::fft {
-
-template <class E,
-          typename std::enable_if<
+namespace detail{
+template <class E, typename std::enable_if<
               xtl::is_complex<typename std::decay<E>::type::value_type>::value,
               bool>::type = true>
 inline auto fft(E &&e) {
@@ -21,7 +23,7 @@ inline auto fft(E &&e) {
   using precision = typename value_type::value_type;
   auto N = e.size();
   auto pi = xt::numeric_constants<precision>::PI;
-  auto ev = xt::eval(e);
+  xt::xtensor<value_type, 1> ev = e;
   if (N <= 1) {
     return ev;
   } else {
@@ -47,13 +49,33 @@ inline auto fft(E &&e) {
     return spectrum;
   }
 }
+}
+
+template <class E,
+          typename std::enable_if<
+              xtl::is_complex<typename std::decay<E>::type::value_type>::value,
+              bool>::type = true>
+inline auto fft(E &&e, std::ptrdiff_t axis = -1) {
+  using value_type = typename std::decay_t<E>::value_type;
+  using precision = typename value_type::value_type;
+  xt::xarray<std::complex<precision>> out = xt::eval(e);
+  auto saxis = xt::normalize_axis(e.dimension(), axis);
+  auto begin = xt::axis_slice_begin(out, saxis);
+  auto end = xt::axis_slice_end(out, saxis);
+  for (auto iter = begin; iter != end; iter++) {
+    xt::noalias(*iter) =  detail::fft(*iter);
+  }
+  return out;
+}
 
 template <class E,
           typename std::enable_if<
               !xtl::is_complex<typename std::decay<E>::type::value_type>::value,
               bool>::type = true>
-inline auto fft(E &&e) {
+inline auto fft(E &&e, std::ptrdiff_t axis = -1) {
   using value_type = typename std::decay<E>::type::value_type;
-  return fft(xt::cast<std::complex<value_type>>(e));
+  return fft(xt::cast<std::complex<value_type>>(e), axis);
 }
+
+
 } // namespace xt::fft

@@ -2,15 +2,18 @@
 #ifdef XTENSOR_USE_TBB
 #include <oneapi/tbb.h>
 #endif
+#include <stdexcept>
 #include <xtensor/xarray.hpp>
 #include <xtensor/xbuilder.hpp>
 #include <xtensor/xview.hpp>
 #include <xtl/xcomplex.hpp>
-#include <stdexcept>
 
 namespace xt::fft {
 
-template <class E, typename std::enable_if<xtl::is_complex<typename std::decay<E>::type::value_type>::value, bool>::type = true> 
+template <class E,
+          typename std::enable_if<
+              xtl::is_complex<typename std::decay<E>::type::value_type>::value,
+              bool>::type = true>
 inline auto fft(E &&e) {
   using namespace xt::placeholders;
   using namespace std::complex_literals;
@@ -45,10 +48,12 @@ inline auto fft(E &&e) {
   }
 }
 
-template <class E, typename std::enable_if<!xtl::is_complex<typename std::decay<E>::type::value_type>::value, bool>::type = true> 
-inline auto fft(E&& e) 
-{
-    using value_type = typename std::decay<E>::type::value_type;
-    return fft(xt::cast<std::complex<value_type>>(e));
+template <class E,
+          typename std::enable_if<
+              !xtl::is_complex<typename std::decay<E>::type::value_type>::value,
+              bool>::type = true>
+inline auto fft(E &&e) {
+  using value_type = typename std::decay<E>::type::value_type;
+  return fft(xt::cast<std::complex<value_type>>(e));
 }
 } // namespace xt::fft

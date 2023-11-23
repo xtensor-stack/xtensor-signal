@@ -61,9 +61,8 @@ inline auto fft(E &&e, std::ptrdiff_t axis = -1) {
   xt::xarray<std::complex<precision>> out = xt::eval(e);
   auto saxis = xt::normalize_axis(e.dimension(), axis);
   const auto n = e.shape(saxis);
-  if((n & (n - 1)) == 0 || n == 0)
-  {
-    //TODO: Replace implementation with dft
+  if ((n & (n - 1)) == 0 || n == 0) {
+    // TODO: Replace implementation with dft
     XTENSOR_THROW(std::runtime_error, "FFT Implementation requires power of 2");
   }
   auto begin = xt::axis_slice_begin(out, saxis);

@@ -6,6 +6,7 @@
 TEST_SUITE("fft") {
 
   TEST_CASE("fft_single") {
+    bool powerOfTwo = !(8 == 0) && !(8 & (8 - 1));
     xt::xtensor<float, 1> input = {1, 1, 1, 1, 0, 0, 0, 0};
     xt::xtensor<float, 1> expectation = {4.000, 2.613, 0.000, 1.082,
                                          0.000, 1.082, 0.000, 2.613};

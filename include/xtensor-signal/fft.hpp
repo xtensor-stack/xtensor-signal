@@ -22,6 +22,12 @@ inline auto fft(E &&e) {
   using value_type = typename std::decay_t<E>::value_type;
   using precision = typename value_type::value_type;
   auto N = e.size();
+  const bool powerOfTwo = !(N == 0) && !(N & (N - 1));
+  //check for power of 2
+  if (!powerOfTwo || N == 0) {
+    // TODO: Replace implementation with dft
+    XTENSOR_THROW(std::runtime_error, "FFT Implementation requires power of 2");
+  }
   auto pi = xt::numeric_constants<precision>::PI;
   xt::xtensor<value_type, 1> ev = e;
   if (N <= 1) {
@@ -60,12 +66,6 @@ inline auto fft(E &&e, std::ptrdiff_t axis = -1) {
   using precision = typename value_type::value_type;
   xt::xarray<std::complex<precision>> out = xt::eval(e);
   auto saxis = xt::normalize_axis(e.dimension(), axis);
-  const auto n = e.shape(saxis);
-  //check for power of 2
-  if ((n & (n - 1)) == 0 || n == 0) {
-    // TODO: Replace implementation with dft
-    XTENSOR_THROW(std::runtime_error, "FFT Implementation requires power of 2");
-  }
   auto begin = xt::axis_slice_begin(out, saxis);
   auto end = xt::axis_slice_end(out, saxis);
   for (auto iter = begin; iter != end; iter++) {

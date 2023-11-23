@@ -63,6 +63,7 @@ inline auto fft(E &&e, std::ptrdiff_t axis = -1) {
   const auto n = e.shape(saxis);
   if((n & (n - 1)) == 0 || n == 0)
   {
+    //TODO: Replace implementation with dft
     XTENSOR_THROW(std::runtime_error, "FFT Implementation requires power of 2");
   }
   auto begin = xt::axis_slice_begin(out, saxis);

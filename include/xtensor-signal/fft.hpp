@@ -23,7 +23,7 @@ inline auto fft(E &&e) {
   using precision = typename value_type::value_type;
   auto N = e.size();
   const bool powerOfTwo = !(N == 0) && !(N & (N - 1));
-  //check for power of 2
+  // check for power of 2
   if (!powerOfTwo || N == 0) {
     // TODO: Replace implementation with dft
     XTENSOR_THROW(std::runtime_error, "FFT Implementation requires power of 2");

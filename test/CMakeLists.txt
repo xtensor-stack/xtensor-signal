@@ -7,7 +7,7 @@
 # The full license is in the file LICENSE, distributed with this software. #
 ############################################################################
 
-cmake_minimum_required(VERSION 3.1)
+cmake_minimum_required(VERSION 3.5)
 
 if (CMAKE_CURRENT_SOURCE_DIR STREQUAL CMAKE_SOURCE_DIR)
     project(xtensor-signal-test)
@@ -40,15 +40,24 @@ set(XTENSOR_SIGNAL_TESTS
     test_config.cpp
     find_peaks_test.cpp
     lfilter_test.cpp
+    fft_test.cpp
 )
 
 if(CMAKE_CXX_COMPILER_ID MATCHES "MSVC")
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${_cxx_std_flag} /MP /bigobj")
 endif()
 
+
+
 file(COPY "test_data" DESTINATION "${CMAKE_BINARY_DIR}/test")
 
 add_executable(test_xtensor_signal ${XTENSOR_SIGNAL_TESTS} ${XTENSOR_SIGNAL_HEADERS})
+if(XTENSOR_USE_TBB)
+    target_compile_definitions(test_xtensor_signal PRIVATE XTENSOR_USE_TBB)
+    target_include_directories(test_xtensor_signal PRIVATE ${TBB_INCLUDE_DIRS})
+    target_link_libraries(test_xtensor_signal PRIVATE ${TBB_LIBRARIES})
+endif()
+
 target_link_libraries(test_xtensor_signal PRIVATE ZLIB::ZLIB xtensor-signal doctest::doctest ${CMAKE_THREAD_LIBS_INIT})
 
 add_custom_target(xtest COMMAND ./test_xtensor_signal DEPENDS test_xtensor_signal)

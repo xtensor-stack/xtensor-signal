@@ -49,6 +49,7 @@ inline auto fft(E &&e) {
     auto t = exp * odd;
     auto first_half = even + t;
     auto second_half = even - t;
+    //TODO: should be a call to stack if performance was improved
     auto spectrum = xt::xtensor<value_type, 1>::from_shape({N});
     xt::view(spectrum, xt::range(0, N / 2)) = first_half;
     xt::view(spectrum, xt::range(N / 2, N)) = second_half;

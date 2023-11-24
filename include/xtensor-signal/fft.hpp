@@ -34,8 +34,8 @@ inline auto fft(E &&e) {
     return ev;
   } else {
 #ifdef XTENSOR_USE_TBB
-    xt::xarray<value_type> even;
-    xt::xarray<value_type> odd;
+    xt::xtensor<value_type, 1> even;
+    xt::xtensor<value_type, 1> odd;
     oneapi::tbb::parallel_invoke(
         [&] { even = fft(xt::view(ev, xt::range(0, _, 2))); },
         [&] { odd = fft(xt::view(ev, xt::range(1, _, 2))); });

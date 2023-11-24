@@ -67,6 +67,7 @@ set(XTENSOR_SIGNAL_HEADERS
     ${XTENSOR_SIGNAL_INCLUDE_DIR}/xtensor-signal/xtensor_signal.hpp
     ${XTENSOR_SIGNAL_INCLUDE_DIR}/xtensor-signal/find_peaks.hpp
     ${XTENSOR_SIGNAL_INCLUDE_DIR}/xtensor-signal/lfilter.hpp
+    ${XTENSOR_SIGNAL_INCLUDE_DIR}/xtensor-signal/fft.hpp
     )
 
 add_library(xtensor-signal INTERFACE)
@@ -78,10 +79,17 @@ target_include_directories(xtensor-signal INTERFACE
 target_link_libraries(xtensor-signal INTERFACE xtensor xsimd)
 
 OPTION(BUILD_TESTS "xtensor test suite" OFF)
+OPTION(XTENSOR_USE_TBB "Use tbb libraries" OFF)
 
 if(BUILD_TESTS)
     add_subdirectory(test)
 endif()
+
+if(XTENSOR_USE_TBB)
+    find_package(TBB REQUIRED)
+    message(STATUS "Found intel TBB: ${TBB_INCLUDE_DIRS}")
+endif()
+
 
 # Installation
 # ============

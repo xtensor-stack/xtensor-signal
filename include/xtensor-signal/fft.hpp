@@ -59,11 +59,11 @@ inline auto fft(E &&e) {
 } // namespace detail
 
 /**
-* @breif 1D FFT of an Nd array along a specified axis
-* @param e an Nd expression to be transformed to the fourier domain
-* @param axis the axis along which to perform the 1D FFT
-* @return a transformed xarray of the specified precision
-*/
+ * @brief 1D FFT of an Nd array along a specified axis
+ * @param e an Nd expression to be transformed to the fourier domain
+ * @param axis the axis along which to perform the 1D FFT
+ * @return a transformed xarray of the specified precision
+ */
 template <class E,
           typename std::enable_if<
               xtl::is_complex<typename std::decay<E>::type::value_type>::value,
@@ -82,11 +82,11 @@ inline auto fft(E &&e, std::ptrdiff_t axis = -1) {
 }
 
 /**
-* @breif 1D FFT of an Nd array along a specified axis
-* @param e an Nd expression to be transformed to the fourier domain
-* @param axis the axis along which to perform the 1D FFT
-* @return a transformed xarray of the specified precision
-*/
+ * @breif 1D FFT of an Nd array along a specified axis
+ * @param e an Nd expression to be transformed to the fourier domain
+ * @param axis the axis along which to perform the 1D FFT
+ * @return a transformed xarray of the specified precision
+ */
 template <class E,
           typename std::enable_if<
               !xtl::is_complex<typename std::decay<E>::type::value_type>::value,
